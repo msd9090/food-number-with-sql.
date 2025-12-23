@@ -1,0 +1,5 @@
+Input PAN Number,Issue Identified,Expected Action
+abcde1234f,Lowercase letters,Convert to ABCDE1234F
+ABCDE 1234F,Extra Spaces,Trim to ABCDE1234F
+AABCE1234F,Repeated Characters,Flag as Invalid (via fn_check)
+ABCDE12345,Wrong Format,Flag as Invalid (via Regex)
